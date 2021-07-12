@@ -2,7 +2,7 @@ package com.Alevel.Factory;
 
 public class ChocolateIceCream implements IceCreamInt {
     @Override
-    public void eat() {
+    public void eat(IceCream icecream) {
         System.out.println("You eat chocolate icecream!");
     }
 }

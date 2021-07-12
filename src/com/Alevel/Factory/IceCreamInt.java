@@ -1,5 +1,5 @@
 package com.Alevel.Factory;
 
 public interface IceCreamInt {
-    void eat ();
+    void eat (IceCream icecream);
 }
