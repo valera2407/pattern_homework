@@ -22,7 +22,7 @@ public class Main {
         };
         for (CreatorAbstract creator : creators){
             IceCreamInt icecream = creator.factoryCreator();
-            System.out.println(icecream);
+            icecream.eat();
         }
     }
 }
