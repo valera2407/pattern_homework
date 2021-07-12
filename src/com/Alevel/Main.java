@@ -1,20 +1,23 @@
 package com.Alevel;
 
 
+import com.Alevel.Builder.BookDirector;
+import com.Alevel.Builder.BooksBuilder;
+import com.Alevel.Builder.BuilderBooks;
 import com.Alevel.Factory.*;
 
 
 public class Main {
 
     public static void main(String[] args) {
-        /*singleton*//*
+        //singleton
         Singleton singleton = Singleton.getInstance("command");
         System.out.println(singleton);
-        *//*buielder*//*
+        //buielder
         BooksBuilder builder = new BuilderBooks();
         BookDirector director = new BookDirector(builder);
         System.out.println(director.construct());
-        *//*factory*/
+       // factory
         CreatorAbstract [] creators = {
                 new EstCreator(),
                 new PolCreator(),
